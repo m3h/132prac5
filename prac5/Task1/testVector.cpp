@@ -1,7 +1,7 @@
 /******************************************************************************
 	//Please fill in your details here
-	Name: 
-	Student number:
+	Name: Reece Volker
+	Student number: u16312572
 ******************************************************************************/
 
 #include <iostream>
