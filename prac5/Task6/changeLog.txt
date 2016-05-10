@@ -1,0 +1,2 @@
+Changed the dateStamp array to be on the stack.
+Removed the first entry in the given data file to have a few consecutive entries at the beginning (easier to test) while developing
