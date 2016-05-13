@@ -4,6 +4,10 @@
 #ifndef NAME_SORT_H
 #define NAME_SORT_H
 
+#include <string>
+
+using namespace std;
+
 //Function sorts by both surname and first name, but with surnames first	
 void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
 

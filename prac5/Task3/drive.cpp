@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>
+#include <cstddef>
+
 #include "nameSort.h"
+
+using namespace std;
 
 int main()
 {
@@ -15,4 +19,6 @@ int main()
     {
         cout << last[i] << " " << first[i] << endl;
     }
+
+    return 0;
 }
