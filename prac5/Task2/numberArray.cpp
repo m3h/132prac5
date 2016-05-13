@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <valarray>
 
 #include "numberArray.h"
 
@@ -151,7 +152,25 @@ void rotate( int arr[], size_t size, int dist = 0 )
 
 bool shift( int array[], size_t size, int startInd, int stopInd, int dist = 0 )
 {
+    if( startInd > stopInd )
+        return false;
+
+
+    if( dist == 0 )
+        return true;
+
+    valarray<int> temp( array, size );
+
+    temp.shift( -dist );
+
+    for( int i = startInd; i <= stopInd; i++ )
+    {
+        if( i + dist >= 0 && i + dist < size - 1 )
+            array[ i + dist ] = temp[i];
+    }
+
     return true;
+
 }
 
 void displayArray( int arr[], size_t size )
