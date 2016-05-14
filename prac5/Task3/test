@@ -1,0 +1,198 @@
+In file included from drive.cpp:5:0:
+nameSort.h:8:23: error: variable or field ‘sortSurnameFirst’ declared void
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                       ^
+nameSort.h:8:23: error: ‘string’ was not declared in this scope
+nameSort.h:8:23: note: suggested alternative:
+In file included from /usr/include/c++/4.9/iosfwd:39:0,
+                 from /usr/include/c++/4.9/ios:38,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from drive.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from drive.cpp:5:0:
+nameSort.h:8:42: error: ‘string’ was not declared in this scope
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                                          ^
+nameSort.h:8:42: note: suggested alternative:
+In file included from /usr/include/c++/4.9/iosfwd:39:0,
+                 from /usr/include/c++/4.9/ios:38,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from drive.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from drive.cpp:5:0:
+nameSort.h:8:70: error: expected primary-expression before ‘size’
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                                                                      ^
+nameSort.h:11:25: error: variable or field ‘sortFirstnameFirst’ declared void
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                         ^
+nameSort.h:11:25: error: ‘string’ was not declared in this scope
+nameSort.h:11:25: note: suggested alternative:
+In file included from /usr/include/c++/4.9/iosfwd:39:0,
+                 from /usr/include/c++/4.9/ios:38,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from drive.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from drive.cpp:5:0:
+nameSort.h:11:44: error: ‘string’ was not declared in this scope
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                                            ^
+nameSort.h:11:44: note: suggested alternative:
+In file included from /usr/include/c++/4.9/iosfwd:39:0,
+                 from /usr/include/c++/4.9/ios:38,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from drive.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from drive.cpp:5:0:
+nameSort.h:11:72: error: expected primary-expression before ‘size’
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                                                                        ^
+nameSort.h:14:19: error: variable or field ‘displayNames’ declared void
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                   ^
+nameSort.h:14:19: error: ‘string’ was not declared in this scope
+nameSort.h:14:19: note: suggested alternative:
+In file included from /usr/include/c++/4.9/iosfwd:39:0,
+                 from /usr/include/c++/4.9/ios:38,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from drive.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from drive.cpp:5:0:
+nameSort.h:14:38: error: ‘string’ was not declared in this scope
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                                      ^
+nameSort.h:14:38: note: suggested alternative:
+In file included from /usr/include/c++/4.9/iosfwd:39:0,
+                 from /usr/include/c++/4.9/ios:38,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from drive.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from drive.cpp:5:0:
+nameSort.h:14:66: error: expected primary-expression before ‘size’
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                                                                  ^
+drive.cpp: In function ‘int main()’:
+drive.cpp:16:41: error: ‘sortSurnameFirst’ was not declared in this scope
+     sortSurnameFirst( last, first, size );
+                                         ^
+nameSort.h:8:23: error: variable or field ‘sortSurnameFirst’ declared void
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                       ^
+nameSort.h:8:23: error: ‘string’ was not declared in this scope
+nameSort.h:8:42: error: ‘string’ was not declared in this scope
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                                          ^
+nameSort.h:8:63: error: ‘size_t’ was not declared in this scope
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                                                               ^
+nameSort.h:11:25: error: variable or field ‘sortFirstnameFirst’ declared void
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                         ^
+nameSort.h:11:25: error: ‘string’ was not declared in this scope
+nameSort.h:11:44: error: ‘string’ was not declared in this scope
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                                            ^
+nameSort.h:11:65: error: ‘size_t’ was not declared in this scope
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                                                                 ^
+nameSort.h:14:19: error: variable or field ‘displayNames’ declared void
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                   ^
+nameSort.h:14:19: error: ‘string’ was not declared in this scope
+nameSort.h:14:38: error: ‘string’ was not declared in this scope
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                                      ^
+nameSort.h:14:59: error: ‘size_t’ was not declared in this scope
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                                                           ^
+In file included from nameSort.cpp:4:0:
+nameSort.h:8:23: error: variable or field ‘sortSurnameFirst’ declared void
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                       ^
+nameSort.h:8:23: error: ‘string’ was not declared in this scope
+nameSort.h:8:23: note: suggested alternative:
+In file included from /usr/include/c++/4.9/string:39:0,
+                 from nameSort.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from nameSort.cpp:4:0:
+nameSort.h:8:42: error: ‘string’ was not declared in this scope
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                                          ^
+nameSort.h:8:42: note: suggested alternative:
+In file included from /usr/include/c++/4.9/string:39:0,
+                 from nameSort.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from nameSort.cpp:4:0:
+nameSort.h:8:70: error: expected primary-expression before ‘size’
+ void sortSurnameFirst(string surnames[], string firstnames[], size_t size);
+                                                                      ^
+nameSort.h:11:25: error: variable or field ‘sortFirstnameFirst’ declared void
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                         ^
+nameSort.h:11:25: error: ‘string’ was not declared in this scope
+nameSort.h:11:25: note: suggested alternative:
+In file included from /usr/include/c++/4.9/string:39:0,
+                 from nameSort.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from nameSort.cpp:4:0:
+nameSort.h:11:44: error: ‘string’ was not declared in this scope
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                                            ^
+nameSort.h:11:44: note: suggested alternative:
+In file included from /usr/include/c++/4.9/string:39:0,
+                 from nameSort.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from nameSort.cpp:4:0:
+nameSort.h:11:72: error: expected primary-expression before ‘size’
+ void sortFirstnameFirst(string surnames[], string firstnames[], size_t size);
+                                                                        ^
+nameSort.h:14:19: error: variable or field ‘displayNames’ declared void
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                   ^
+nameSort.h:14:19: error: ‘string’ was not declared in this scope
+nameSort.h:14:19: note: suggested alternative:
+In file included from /usr/include/c++/4.9/string:39:0,
+                 from nameSort.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from nameSort.cpp:4:0:
+nameSort.h:14:38: error: ‘string’ was not declared in this scope
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                                      ^
+nameSort.h:14:38: note: suggested alternative:
+In file included from /usr/include/c++/4.9/string:39:0,
+                 from nameSort.cpp:1:
+/usr/include/c++/4.9/bits/stringfwd.h:62:33: note:   ‘std::string’
+   typedef basic_string<char>    string;   
+                                 ^
+In file included from nameSort.cpp:4:0:
+nameSort.h:14:66: error: expected primary-expression before ‘size’
+ void displayNames(string surnames[], string firstnames[], size_t size);
+                                                                  ^

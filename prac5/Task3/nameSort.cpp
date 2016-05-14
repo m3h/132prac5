@@ -1,12 +1,14 @@
+#include <iostream>
 #include <string>
 #include <cstddef>
 #include <locale>
+#include <iomanip>
 
 #include "nameSort.h"
 
 using namespace std;
 
-string returnLower( string given );
+string returnLower( string given )
 {
     locale loc;
     string output = "";
@@ -16,7 +18,7 @@ string returnLower( string given );
         output += tolower( given[i], loc );
     }
 
-    return output
+    return output;
 }
 
 void sortParallel( string str[], string dependant[], size_t size )
@@ -34,7 +36,7 @@ void sortSurnameFirst(string surnames[], string firstnames[], size_t size)
         swap = false;
         for( int count = 0; count < (size - 1); ++count )
         {
-            if( strcmp( returnLower( surnames[count] ), returnLower( surnames[count + 1]) ) )
+            if( strcmp( returnLower( surnames[count] ), returnLower( surnames[count + 1]) ) > 0 )
             {
                 
                 tempS = surnames[count];
@@ -50,7 +52,7 @@ void sortSurnameFirst(string surnames[], string firstnames[], size_t size)
 
             } else if( !strcmp( returnLower( surnames[count] ), returnLower( surnames[count + 1]) ) )
             {
-                if( strcmp( returnLower( firstnames[count] ), returnLower( firstnames[count + 1])) )
+                if( strcmp( returnLower( firstnames[count] ), returnLower( firstnames[count + 1])) > 0)
                 {
 
                 tempS = surnames[count];
@@ -67,16 +69,23 @@ void sortSurnameFirst(string surnames[], string firstnames[], size_t size)
         }
     } while (swap);
 }
-                    
-}
+
 //Function sorts by both surname and first name, but with first names first
 void sortFirstnameFirst(string surnames[], string firstnames[], size_t size)
 {
-    return;
+    sortSurnameFirst( firstnames, surnames, size );
 }
 
 //Function displays the names in the array in the order in which they are stored
 void displayNames(string surnames[], string firstnames[], size_t size)
 {
-    return;
+    cout << left << setw(20) << "Surnames" << "First Names" << endl;
+    for( int i = 0; i < 20; ++i )
+        cout << "-";
+    cout << endl;
+
+    for( int i = 0; i < size; ++i )
+    {
+        cout << left << setw(20) << surnames[i] << firstnames[i] << endl;
+    }
 }

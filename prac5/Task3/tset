@@ -1,0 +1,15 @@
+nameSort.cpp: In function ‘void sortSurnameFirst(std::string*, std::string*, size_t)’:
+nameSort.cpp:39:91: error: ‘strcmp’ was not declared in this scope
+             if( strcmp( returnLower( surnames[count] ), returnLower( surnames[count + 1]) ) > 0 )
+                                                                                           ^
+nameSort.cpp:73:1: error: expected ‘while’ before ‘}’ token
+ }
+ ^
+nameSort.cpp:73:1: error: expected ‘(’ before ‘}’ token
+nameSort.cpp:73:1: error: expected primary-expression before ‘}’ token
+nameSort.cpp:73:1: error: expected ‘)’ before ‘}’ token
+nameSort.cpp:73:1: error: expected ‘;’ before ‘}’ token
+nameSort.cpp: At global scope:
+nameSort.cpp:95:1: error: expected declaration before ‘}’ token
+ }
+ ^

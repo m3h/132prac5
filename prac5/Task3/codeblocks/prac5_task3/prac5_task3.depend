@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1463238161 source:/media/home/Documents/git/prac5/prac5/Task3/codeblocks/prac5_task3/main.cpp
+	<string>
+	<cstddef>
+	"nameSort.h"
+
+1463237343 /media/home/Documents/git/prac5/prac5/Task3/codeblocks/prac5_task3/nameSort.h
+	<string>
+
+1463238549 source:/media/home/Documents/git/prac5/prac5/Task3/codeblocks/prac5_task3/nameSort.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<cstddef>
+	<locale>
+	<iomanip>
+	"nameSort.h"
+
+1463239255 source:/media/home/Documents/git/prac5/prac5/Task3/codeblocks/prac5_task3/names.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"nameSort.h"
+
