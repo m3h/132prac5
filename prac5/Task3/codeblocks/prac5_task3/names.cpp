@@ -20,18 +20,12 @@ int main()
         return 0;
     }
 
-    string temp;
-    for( int i = 0; names >> temp; i++ )
+    for( int count = 0; names; size = ++count )
     {
-        if( i % 2 == 0)
-        { cout  << "str1: " << temp << "|" << endl;
-            str1[i] = temp;
-        } else
-        {   cout  << "str2: " << temp << "|" << endl;
-            str2[i] = temp;
-        }
-        size = i;
+        names >> str1[count];
+        names >> str2[count];
     }
+    names.close();
 
     cout << "Names Sorting" << endl;
     cout << "-------------" << endl;
@@ -43,13 +37,24 @@ int main()
     int input;
     cin >> input;
 
-    cout << "The sorted names by surnames then first names are:" << endl;
-    displayNames( str1, str2, size);
-    for( int i = 0; i < 8; i++ )
+    switch( input )
     {
-        cout << str1[i].size() << " ";}
-    string first[] = { "Vreda", "billy", "Pretty", "Samantha", "Charlie", "Hein", "Grace", "Abel" };
-    string last[] = { "chadwick", "Babajide", "Adams", "Venter", "Adams", "Adams", "Adams", "deWet" };
-    displayNames( first, last, 8);
+        case 1:
+        cout << "The sorted names by surnames then first names are:" << endl;
+        sortSurnameFirst( str1, str2, size );
+        displayNames( str1, str2, size);
+        break;
+
+        case 2:
+        cout << "The sorted names by first names then surnames are:" << endl;
+        sortFirstnameFirst( str1, str2, size );
+        displayNames( str1, str2, size );
+        break;
+
+        default:
+        cout << "Fuck" << endl;
+        break;
+    }
+
     return 0;
 }

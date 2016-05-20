@@ -1,0 +1,4 @@
+translate.cpp: In function ‘std::string translate(int)’:
+translate.cpp:46:34: error: ‘itoa’ was not declared in this scope
+     char *intStr = itoa(number/61);
+                                  ^
